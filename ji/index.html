@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./dist/css/swiper.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#"><i class="iconfont">&#xe70a;</i></a>
+            <p><input type="text" placeholder="给你推荐  菩提偈"><i class="iconfont find">&#xe729;</i></p>
+            <a href="#"><i class="iconfont">&#xe6f5;</i></a>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li class="click">音乐</li>
+                    <li>视频</li>
+                    <li>电台</li>
+                </ul> 
+            </nav>
+            <div class="swiper-container">
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/swip.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="li1">
+                <dl>
+                    <dt>
+                        <img src="./img/li1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        私人FM
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./img/li2.jpg" alt="">
+                    </dt>
+                    <dd>
+                        每日推荐
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./img/li3.jpg" alt="">
+                    </dt>
+                    <dd>
+                        歌单
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./img/li4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        排行榜
+                    </dd>
+                </dl>
+            </div>
+            <h3>
+                <p>推荐歌单<i class="iconfont">&#xe723;</i></p>
+            </h3>
+            <div class="li2">
+                <dl>
+                    <dt>
+                        <img src="./img/lit1.jpg" alt="">
+                    </dt>
+                    <dd>
+                        春日偷懒指南
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./img/lit2.jpg" alt="">
+                    </dt>
+                    <dd>
+                        听梦不愿醒
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./img/lit3.jpg" alt="">
+                    </dt>
+                    <dd>
+                        最近很火
+                    </dd>
+                </dl>
+            </div>
+            <div class="li3">
+                <ul>
+                    <li>
+                        <img src="./img/lis1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/lis2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/lis3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+             <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="file:///C:/Users/duyize/Desktop/zk1/jineng/one.html">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a> 
+        </footer>
+    </div>
+    <script src="./dist/js/swiper.js"></script>
+    <script src="./js/zepto.js"></script>
+</body>
+<script>
+    $('section nav ul li').click(function(){
+        $(this).addClass('click').siblings().removeClass('click');
+    });
+    new Swiper('.swiper-container',{
+        loop:true,
+        autoplay:1000
+    });
+</script>
+</html>

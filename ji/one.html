@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./dist/css/swiper.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#"><i class="iconfont">&#xe70a;</i></a>
+            <p><input type="text" placeholder="给你推荐  菩提偈"><i class="iconfont find">&#xe729;</i></p>
+            <a href="#"><i class="iconfont">&#xe6f5;</i></a>
+        </header>
+        <section>
+            1111
+        </section>
+        <footer>
+             <a href="/one.html">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a>
+            <a href="#">
+                <dl>
+                    <dd>
+                        <i class="iconfont">
+                            &#xe716;
+                        </i>
+                    </dd>
+                    <dt>
+                        发现音乐
+                    </dt>
+                </dl>
+            </a> 
+        </footer>
+    </div>
+    <script src="./dist/js/swiper.js"></script>
+    <script src="./js/zepto.js"></script>
+</body>
+<script>
+    $('section nav ul li').click(function(){
+        $(this).addClass('click').siblings().removeClass('click');
+    });
+    new Swiper('.swiper-container',{
+        loop:true,
+        autoplay:1000,
+        pagenation:true
+    });
+</script>
+</html>
